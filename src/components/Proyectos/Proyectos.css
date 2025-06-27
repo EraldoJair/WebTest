@@ -1,0 +1,165 @@
+.p-wrapper-proyectos {
+  /* El backgroundColor se aplica via props en el componente */
+}
+
+.p-container,
+.p-container-reverse {
+  justify-content: space-around;
+}
+
+.p-container-reverse {
+  flex-direction: row-reverse;
+}
+
+.p-container .image-container,
+.p-container-reverse .image-container {
+  /* border: 8px solid rgb(232 232 232/93%); */
+  position: relative;
+}
+
+.p-container > div,
+.p-container-reverse > div {
+  flex: 1;
+}
+
+.p-content {
+  gap: 0.5rem;
+}
+
+.p-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.img1 {
+  width: 100%;
+  height: auto;
+}
+
+.img2 {
+  position: absolute;
+  top: 20px;
+  border-radius: 50%; 
+  background-color: #1ACDE5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px; 
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+/* Cuando la imagen está a la derecha, logo en esquina superior derecha */
+.img2-right {
+  right: 20px;
+}
+
+/* Cuando la imagen está a la izquierda, logo en esquina superior izquierda */
+.img2-left {
+  left: 20px;
+}
+
+.img2:hover {
+  transform: scale(1.05);
+}
+
+.accordion {
+  margin-top: 2rem;
+  border: none;
+  color: white;
+}
+
+.accordionItem {
+  background-color: white;
+  color: white;
+  border: 0.8px solid #80808024;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.accordionItem.expanded {
+  border-radius: 6px;
+}
+
+.accordionButton {
+  background-color: #1acde5;
+  color: #ffffff;
+  /* border: 2px solid #072b74; */
+  border-radius: 12px 12px 0px 0px;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordionButton[aria-expanded="true"] {
+  background-color: #3b82f6 !important;
+  color: white !important;
+  border: 4px solid #0e338e !important; /* Borde azul oscuro */
+  /* border-radius: 12px !important; */
+}
+
+.accordionButton[aria-expanded="true"] .primaryText {
+  color: white !important;
+}
+
+/* .accordionButton[aria-expanded="true"] .icon {
+    color: white !important;
+} */
+
+/* .accordionButton[aria-expanded="true"] svg {
+    color: white !important;
+} */
+
+.accordionButton:hover {
+  background-color: #0e338e;
+}
+
+.accordionItem.expanded .accordionButton {
+  background-color: #0e338e !important; /* Azul cuando está expandido */
+}
+
+.accordionItem.expanded .accordionButton:hover {
+  background-color: #0e338e !important; /* Azul más oscuro */
+}
+
+/* Panel del accordion */
+.accordionItem .accordion__panel {
+  border: 4px solid #0e338e;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  background-color: white;
+  /* padding: 20px; */
+  margin-top: -2px;
+}
+
+.icon {
+  padding: 10px;
+  background: white;
+  /* border-radius: 5px; */
+}
+
+.icon svg {
+  /* color: var(--blue); */
+  color: #1acde5;
+}
+
+.accordionButton .primaryText {
+  font-size: 1.1rem;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .p-container {
+    flex-direction: column-reverse;
+  }
+
+  .p-container-reverse {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Avance de obra",
+    "price": "47,043",
+    "detail": "¡Nuestros proyectos siguen tomando forma! En esta sección compartimos los últimos avances de nuestras obras, con imágenes y actualizaciones reales que reflejan nuestro compromiso con el progreso, la calidad y la entrega a tiempo. ¡Seguimos construyendo sueños juntos!",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Asesor del mes",
+    "price": "66,353",
+    "detail": "Celebramos a quienes marcan la diferencia. Cada mes reconocemos al asesor que destacó por su compromiso, dedicación y cercanía con nuestros clientes. Conoce su historia, su energía y por qué es inspiración para todo el equipo Real.",
+    "image": "./r2.png"
+  },
+  {
+    "name": "¡Nos mudamos! Ahora más cerca de ti",
+    "price": "35,853",
+    "detail": "¡Cambiamos de casa para estar más cerca tuyo! Estrenamos un nuevo local más amplio, cómodo y accesible para recibirte mejor. Ven a visitarnos, conoce nuestro espacio renovado y descubre todo lo que Real Company tiene para ofrecerte.",
+    "image": "./r3.png"
+  },
+  {
+    "name": "Diferente apariencia, mismo corazón",
+    "price": "47,043",
+    "detail": "Estrenamos nueva imagen, pero mantenemos intacta nuestra esencia. Con colores más frescos, un logo renovado y una identidad visual que refleja quiénes somos hoy, reafirmamos nuestro compromiso de crecer contigo. Somos los mismos, con más fuerza y visión. ¡Somos Real Company!",
+    "image": "./r1.png"
+  }
+]

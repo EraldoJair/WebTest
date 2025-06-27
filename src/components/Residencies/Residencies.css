@@ -1,0 +1,192 @@
+.r-container {
+    overflow: hidden;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.r-head {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.r-card {
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: max-content;
+    margin: auto;
+    transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--white);
+    border: 1px solid var(--light);
+    overflow: hidden;
+    position: relative;
+}
+
+.r-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--orange-gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.r-card:hover::before {
+    transform: scaleX(1);
+}
+
+.r-card > img {
+    width: 100%;
+    max-width: 16rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.r-card:hover > img {
+    transform: scale(1.05);
+}
+
+.r-price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.r-price span:first-child {
+    background: var(--orange-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.r-card>:nth-child(3) {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.r-card>:nth-child(4) {
+    font-size: 0.9rem;
+    width: 16rem;
+    color: var(--secondary);
+    line-height: 1.5;
+}
+
+.r-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    cursor: pointer;
+}
+
+.swiper-horizontal {
+    overflow: visible;
+}
+
+.r-buttons {
+    position: absolute;
+    gap: 1rem;
+    top: -5rem;
+    right: 0;
+    z-index: 10;
+}
+
+.r-buttons button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    color: var(--primary);
+    border-radius: 50%;
+    background: var(--white);
+    cursor: pointer;
+    border: 2px solid var(--light);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.r-buttons button:hover {
+    background: var(--orange-gradient);
+    color: var(--white);
+    transform: translateY(-2px);
+    border-color: transparent;
+}
+
+.r-buttons button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+    .r-buttons {
+        position: initial;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    
+    .r-head {
+        align-items: center;
+    }
+    
+    .r-container {
+        padding-top: 3rem;
+    }
+    
+    .r-buttons button {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilos por defecto */
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  background-color: #1ACDE5;
+  padding: 10px 15px 10px 15px;
+  margin: 10px 15px 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 15px;
+  color: white;
+  flex-wrap: wrap;
+  transition: all 0.3s ease; /* Animación suave para toda la barra */
+}
+
+/* Enlaces sin hover */
+.menu-container a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease; /* Transición suave para los enlaces */
+}
+
+/* Animación al pasar el mouse (hover) */
+.menu-container a:hover {
+  color: #E07C25;  /* Cambia el color del texto al pasar el mouse */
+  transform: scale(1.1);  /* Aumenta el tamaño del enlace */
+  text-decoration: underline;  /* Subraya el texto */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-container {
+    font-size: 16px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    font-size: 14px;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,79 @@
+.v-wrapper {
+    padding-top: 5rem;
+    background-color: #F2EEEB;
+}
+.v-container {
+    justify-content: space-around;
+}
+
+.v-container .image-container {
+    border: 8px solid rgb(232 232 232/93%);
+}
+
+.v-container>div {
+    flex: 1;
+}
+
+.v-right {
+    gap: 0.5rem;
+}
+
+.accordion {
+    margin-top: 2rem;
+    border: none;
+}
+
+.accordionItem {
+    background-color: white;
+    /* background-color: rgb(60, 29, 185); */
+    /* border: .8px solid rgba(128,128,128,.143); */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.accordionItem.expanded {
+    border-radius: 6px;
+}
+
+.accordionButton {
+    background-color: #1ACDE5;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+
+.accordionButton:hover {
+  background-color: #0E338E;
+}
+
+.accordionItem.expanded .accordionButton {
+  background-color: #0E338E !important; /* Azul cuando está expandido */
+}
+
+.accordionItem.expanded .accordionButton:hover {
+  background-color: #0E338E !important; /* Azul más oscuro */
+}
+
+.icon {
+    padding: 10px;
+    background: #eeeeff;
+    border-radius: 5px;
+}
+
+.icon svg {
+    color: var(--blue);
+}
+
+.accordionButton .primaryText {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 640px) {
+    .v-container {
+        flex-direction: column;
+    }
+
+}
